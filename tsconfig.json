@@ -1,0 +1,18 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "baseUrl": "./src/" /* Base directory to resolve non-absolute module names. */,
+    "paths": {
+      /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+      "@utils": ["./utils"],
+      "@utils/*": ["./utils/*"]
+    },
+  },
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+	  "**/Pods"
+  ]
+}
